@@ -12,6 +12,6 @@ def home(request):
                 return redirect('dashboard')  # Redirect to a dashboard page after login
             else:
                 return render(request, 'home.html', {'form': form, 'error': 'Invalid credentials'})
-    else:
+    
         
     return render(request, 'home.html', {'form': 'ddd'})
